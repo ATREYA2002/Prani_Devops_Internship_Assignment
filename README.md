@@ -14,18 +14,7 @@ All services are containerized with Docker and managed via Docker Compose. Every
 
 ## 📁 Project Structure
 
-```
-
-.
-├── docker-compose.yml
-├── nginx
-│   ├── nginx.conf
-│   └── Dockerfile
-├── service\_1         # Golang service
-│   └── Dockerfile
-├── service\_2         # Python service
-│   └── Dockerfile
-└── README.md
+![image](https://github.com/user-attachments/assets/5809356d-be71-41ee-8016-0f80e9e2adf5)
 
 ````
 
