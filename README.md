@@ -13,11 +13,8 @@ All services are containerized with Docker and managed via Docker Compose. Every
 ---
 
 ## 📁 Project Structure
-
-![image](https://github.com/user-attachments/assets/5809356d-be71-41ee-8016-0f80e9e2adf5)
-
 ````
-
+![image](https://github.com/user-attachments/assets/5809356d-be71-41ee-8016-0f80e9e2adf5)
 ---
 
 ## ⚙️ How It Works
