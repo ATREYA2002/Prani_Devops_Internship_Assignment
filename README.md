@@ -1,4 +1,3 @@
----
 
 ```markdown
 # 🧩 Multi-Service App with NGINX Reverse Proxy (Dockerized)
