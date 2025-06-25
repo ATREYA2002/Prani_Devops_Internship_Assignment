@@ -12,7 +12,6 @@ All services are containerized with Docker and managed via Docker Compose. Every
 
 ## 📁 Project Structure
 
-
 ├── docker-compose.yml
 ├── nginx
 │ ├── nginx.conf
@@ -24,7 +23,6 @@ All services are containerized with Docker and managed via Docker Compose. Every
 └── README.md
 
 ---
-
 ## ⚙️ How It Works
 
 1. **Service 1** is a Golang API running on port `8001`
@@ -46,5 +44,40 @@ All services are containerized with Docker and managed via Docker Compose. Every
 ### 2️⃣ Clone the Repo
 
 ```
-git clone <your-repo-url>
-cd <your-project-directory>
+git clone https://github.com/ATREYA2002/Prani_Devops_Internship_Assignment.git
+cd Prani_Devops_Internship_Assignment
+```
+
+🌐 Access the Services
+Once running, open your browser or use curl:
+```
+Endpoint	Description
+http://localhost:8081/service1/ping	Health check (Go)
+http://localhost:8081/service1/hello	Hello from Go
+http://localhost:8081/service2/ping	Health check (Python)
+http://localhost:8081/service2/hello	Hello from Python
+```
+
+
+
+📝 What I Did
+1)Created Dockerfiles for:
+
+Golang service exposing port 8001
+Python Flask service exposing port 8002
+NGINX with custom routing config
+
+2)Wrote nginx.conf to:
+
+Reverse proxy to both services
+Log request time, path, and client IP
+
+3)Used Docker Compose to orchestrate the system with a single command
+
+
+📊 Logs & Monitoring
+To view NGINX access logs:
+```
+docker logs nginx
+```
+
